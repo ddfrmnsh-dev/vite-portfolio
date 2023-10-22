@@ -8,6 +8,53 @@ const getInitialData = () => [
   },
 ];
 
+const getTitleProject = () => [
+  {
+    id: 1,
+    title: "Project",
+    description: "Testing banyak sekali",
+  },
+];
+
+const getDataProject = () => [
+  {
+    id: 1,
+    title: "Project",
+    description: "Testing banyak sekali",
+    url: "/image/test.png",
+  },
+  {
+    id: 2,
+    title: "Project",
+    description: "Testing banyak sekali",
+    url: "/image/test.png",
+  },
+  {
+    id: 3,
+    title: "Project",
+    description: "Testing banyak sekali",
+    url: "/image/test.png",
+  },
+  {
+    id: 4,
+    title: "Project",
+    description: "Testing banyak sekali",
+    url: "/image/test.png",
+  },
+  {
+    id: 5,
+    title: "Project",
+    description: "Testing banyak sekali",
+    url: "/image/test.png",
+  },
+  {
+    id: 6,
+    title: "Project",
+    description: "Testing banyak sekali",
+    url: "/image/test.png",
+  },
+];
+
 const showFormattedDate = (date) => {
   const options = {
     weekday: "long",
@@ -18,4 +65,4 @@ const showFormattedDate = (date) => {
   return new Date(date).toLocaleDateString("id-ID", options);
 };
 
-export { getInitialData, showFormattedDate };
+export { getInitialData, showFormattedDate, getTitleProject, getDataProject };

@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Header from './reusable/Header'
+import Footer from './reusable/Footer'
 import {Helmet, HelmetProvider} from "react-helmet-async"
 
 export interface IPageWrapperProps {
@@ -11,13 +12,14 @@ function PageWrapper (props: IPageWrapperProps) {
     <>
     <HelmetProvider>
       <Helmet>
-        <title>Porfolio</title>
+        <title>Porfolio | Dede Firmansah</title>
       </Helmet>
     </HelmetProvider>
       <Header />
       <div>
         {props.children}
       </div>
+      <Footer />
     </>
   );
 }
