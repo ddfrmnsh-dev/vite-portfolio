@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Button } from '../../components/Button';
-import myProfile from '/public/profile.png'
+import myProfile from '/public/image/profile.png'
 
 export interface ISectionIntroduceProps {
 }

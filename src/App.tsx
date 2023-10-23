@@ -1,7 +1,9 @@
-import * as React from 'react';
+// import * as React from 'react';
 import Home from './Pages/Home'
+import Blog from './Pages/Blog'
+import Project from './Pages/Project'
+import CardView from './Pages/Project/CardView';
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
-import BlogPost from './reusable/BlogPost'
 
 export interface IAppProps {
     data: string;
@@ -12,8 +14,12 @@ function App () {
     <>
       <BrowserRouter>
         <div>
-            <Home />
-            <BlogPost/>
+          <Switch>
+            <Route path="/" exact component={Home}/>
+            <Route path="/blog" component={Blog}/>
+            <Route path="/project" component={Project}/>
+            <Route path="/projects/:id" exact component={CardView}/>
+          </Switch>
         </div>
       </BrowserRouter>
     </>
