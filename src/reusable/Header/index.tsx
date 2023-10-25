@@ -10,8 +10,8 @@ function Index () {
   
   const [open, setOpen] = React.useState(false)
   return (
-    <div className='top-0 left-0 w-full mb-5 sticky px-2 md:px-0 lg:px-96 z-10 shadow-md'>
-        <div className={`md:flex items-center justify-between ${open ? 'bg-white' : 'bg-transparent'} py-4 md:px-10 px-7 backdrop-blur-sm`}>
+    <div className='top-0 left-0 w-full mb-5 sticky px-2 md:px-0 lg:px-96 z-10 shadow-md backdrop-blur-sm'>
+        <div className={`md:flex items-center justify-between ${open ? 'bg-white' : 'bg-transparent'} py-4 md:px-10 px-7`}>
             <div onClick={()=>setOpen(!open)}>
               <LogoSection open={open}/>
             </div>

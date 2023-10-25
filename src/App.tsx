@@ -18,7 +18,7 @@ function App () {
             <Route path="/" exact component={Home}/>
             <Route path="/blog" component={Blog}/>
             <Route path="/project" component={Project}/>
-            <Route path="/projects/:id" exact component={CardView}/>
+            <Route path="/projects/:numberParams" exact component={CardView}/>
           </Switch>
         </div>
       </BrowserRouter>

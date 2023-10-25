@@ -28,6 +28,10 @@ const getDataProject = () => [
     title: "Project",
     description: "Testing banyak sekali",
     url: "/image/test.png",
+    details: {
+      nama: "JAGOO",
+      tentang: "matahari"
+    }
   },
   {
     id: 3,
@@ -65,4 +69,4 @@ const showFormattedDate = (date) => {
   return new Date(date).toLocaleDateString("id-ID", options);
 };
 
-export { getInitialData, showFormattedDate, getTitleProject, getDataProject };
+export default { getInitialData, showFormattedDate, getTitleProject, getDataProject };

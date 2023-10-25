@@ -10,7 +10,7 @@ function Index () {
   return (
     <>
     <PageWrapper>
-        <div className='container w-full xl:w-1/2'>
+        <div className='container w-full max-w-xl'>
             <SectionIntroduce />
             <SectionAboutMe/>
         </div>
