@@ -69,4 +69,4 @@ const showFormattedDate = (date) => {
   return new Date(date).toLocaleDateString("id-ID", options);
 };
 
-export default { getInitialData, showFormattedDate, getTitleProject, getDataProject };
+export { getInitialData, showFormattedDate, getTitleProject, getDataProject };

@@ -4,6 +4,7 @@ import Blog from './Pages/Blog'
 import Project from './Pages/Project'
 import CardView from './Pages/Project/CardView';
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import NotFound from './Pages/NofFound';
 
 export interface IAppProps {
     data: string;
@@ -19,6 +20,7 @@ function App () {
             <Route path="/blog" component={Blog}/>
             <Route path="/project" component={Project}/>
             <Route path="/projects/:numberParams" exact component={CardView}/>
+            <Route path="*" exact component={NotFound}/>
           </Switch>
         </div>
       </BrowserRouter>
