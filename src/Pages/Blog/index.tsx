@@ -8,7 +8,7 @@ export interface IIndexProps {
 function Index () {
   return (
     <PageWrapper>
-    <div className='container w-full xl:w-1/2 mt-4'>
+    <div className='container w-full max-w-xl'>
       <div className='w-full self-center px-2'>
         <Banner title='test' description='tets' />
       </div>
